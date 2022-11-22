@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   scroll-behavior: smooth;
+}
+:root{
+   --primary-color: #B713D7;
+   --body-color: #1b1b1b;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   background-color: white;
+   scroll-behavior: smooth;
+   position: relative;
+}
+.nav-bar{
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   width: 100%;
+   height: 50px;
+   background-color: white;
+   box-shadow: 2px 2px 5px rgba(225, 225, 225, 0.5);
+   z-index: 999;
+}
+.nav-bar .logo{
+   margin-left: 10px;
+   line-height: 50px;
+   color: #B713D7;
+}
+.nav-social{
+   margin-right: 10px;
+   line-height: 50px;
+}
+.nav-social a{
+   margin: 0 5px;
+}
+.nav-social a i{
+   font-size: 22px;
+   color: black;
+   transition: 0.38s ease;
+   color: #B713D7;
+}
+.nav-social a i:hover{
+   font-size: 27px;
+   color: #B713D7;
+}
+@media(min-width: 620px){
+   .nav-bar .logo{
+      margin-left: 60px;
+   }
+   .nav-social{
+      margin-right: 60px;
+   }
+}
+
+/* section styling starts here */
+
+section{
+   padding-top: 50px;
+}
+.home-section{
+   padding-bottom: 30px;
+   margin-bottom: 20px;
+}
+
+.home-section{
+   background-image: url(images/background.png);
+   background-repeat: no-repeat;
+   background-size: 300px;
+   background-position-x: 600px;
+   background-position-y: 20px;
+   height: 300px;
+}
+
+.quotes{
+   padding: 40px 40px;
+}
+.quotes h2, h3{
+   margin: 10px 0;
+}
+.quotes h2 span{
+   color: var(--primary-color);
+}
+.quotes .did-you-know{
+   color: var(--primary-color);
+}
+.quotes .fact-div{
+   margin: 20px 0;
+}
+.quotes .become-a-developer{
+   color: var(--primary-color);
+}
+.quotes h4 span{
+   font-size: 20px;
+    color: var(--primary-color);
+}
+@media(max-width: 620px){
+   .quotes{
+      padding: 10px ;
+   }
+}
+
+
+@media(min-width: 620px){
+   .general-flex{
+      display: flex;
+      justify-content: space-around;
+   }
+}
+.project-section #project-heading{
+   text-align: center;
+   margin: 10px 0;
+}
+.project-flex{
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 0;
+}
+.project-wrapper{
+   position: relative;
+   width: 320px;
+   height: 220px;
+   background-color: gold;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.project-wrapper a:hover{
+   background-color: green;
+   color: green;
+}
+.project-wrapper img{
+   position: absolute;
+   width: 100%;
+   border-radius: 10px 10px 0 0;
+}
+.project-wrapper .description{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   background-color: royalblue;
+   padding: 10px;
+   height: 80px;
+   transition: 0.28s linear;
+}
+.description h2{
+   padding: 5px 0 7px 0;
+}
+.description span{
+   font-size: 17px;
+}
+.css .description{
+   background-color: royalblue;
+   color: white;
+}
+.vanilla .description{
+   background-color: gold;
+   color: black;
+}
+.landing .description{
+   background-color: #26B130;
+   color: white;
+}
+
+
+/* subscribtion styling*/
+
+.subscription{
+   margin: 30px 0;
+   display: flex;
+   justify-content: space-around;
+}
+.subscription form{
+   width: 310px;
+   height: auto;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #E3C2FF;
+}
+.subscription form h2, p{
+   margin: 8px 0;
+   color: #000;
+}
+.subscription form p{
+   font-size: 16px;
+}
+.subscription form p:last-child{
+   text-align: center;
+   margin: 10px 0;
+}
+.subscription form input{
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: none;
+   background-color: #fff;
+   outline: none;
+   font-size: 16px;
+}
+.subscription form button{
+   width: 100%;
+   padding: 12px;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: var(--primary-color);
+   margin: 5px 0;
+   border: none;
+   border-radius: 10px;
+   color: #fff;
+   transition: 0.28s ease;
+}
+.subscription form button:hover{
+   border-radius: 0;
+}
+@media(min-width: 620px){
+   .subscription form{
+      width: 600px;
+   }
+}
+
+/* section ends footer styling starts */
+
+footer{
+   background-color: #151515;
+}
+
+.footer-section{
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+.footer-section .logo{
+   line-height: 50px;
+   color: var(--primary-color);
+   margin-left: 10px;
+}
+.footer-section .social{
+   line-height: 50px;
+   margin-right: 10px;
+}
+footer p{
+   font-size: 13px;
+   color: #fff;
+   text-align: center;
+}
+@media(min-width: 620px){
+   .footer-section .logo{
+      margin-left: 60px;
+   }
+}
+
+
+
+

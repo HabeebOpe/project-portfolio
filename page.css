@@ -1,0 +1,124 @@
+/* setting each page main-menu background-color */
+body{
+   position: relative;
+}
+.vanilla-page{
+   background-image: linear-gradient(120deg, gold 60%, #E7E551 40%);
+}
+.css-page{
+   background-image: linear-gradient(1200deg, royalblue 60%, dodgerblue 40%);
+}
+.page-main-section{
+   height: 180px;
+   width: 100%;
+}
+.page-quote{
+   padding: 20px;
+}
+.page-quote h2{
+   margin: 20px 0;
+}
+
+.page-js-list{
+   margin-top: 10px;
+}
+.v-project{
+   width: 320px;
+   height: 200px;
+   background-color: seagreen;
+   border-radius: 5px;
+   position: relative;
+   overflow: hidden;
+}
+.v-project img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+.v-project .list{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   padding: 8px;
+   background-color: #D3DFED;
+   height: 45px;
+   transition: 0.2s linear;
+}
+.v-project:hover .list{
+   height: 120px;
+}
+.v-project .list h3{
+   margin: 4px 0 12px 0;
+}
+.v-project .list h4{
+   margin: 5px;
+   color: blue;
+}
+
+
+@media(min-width: 620px){
+   .page-desktop-flex{
+      display: flex;
+      justify-content: space-around;
+      margin: 10px 0;
+   }
+}
+
+
+
+
+.alert{
+    position: fixed;
+    top: 5px;
+    width: 320px;
+    background-color: #D0A1E9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-left: 8px solid #511571;
+    overflow: hidden;
+    right: -320px;
+    z-index: 9999;
+}
+.show{
+    right: 5px;
+    animation: slide 0.5s ease forwards;
+}
+@keyframes slide{
+    0%{
+        right: 40px;
+    }
+    20%{
+        right: -40px;
+    }
+    40%{
+        right: 40px;
+    }
+    80%{
+        right: -40px;
+    }
+    100%{
+        right: 5px;
+    }
+}
+.alert span:first-child{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #59117F;
+}
+.alert p{
+    font-size: 16px;
+    color: #59117F;
+}
+.alert span:last-child{
+    font-size: 22px;
+    width: 40px;
+    height: 100%;
+    background-color: #C874F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #59117F;
+}
