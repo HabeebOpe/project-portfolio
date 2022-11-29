@@ -23,12 +23,18 @@ body{
    margin-top: 10px;
 }
 .v-project{
-   width: 320px;
-   height: 200px;
+   width: 340px;
+   height: 220px;
    background-color: seagreen;
    border-radius: 5px;
    position: relative;
    overflow: hidden;
+}
+@media(min-width: 620px){
+   .v-project{
+      width: 300px;
+      height: 200
+   }
 }
 .v-project img{
    position: absolute;
@@ -63,14 +69,10 @@ body{
       margin: 10px 0;
    }
 }
-
-
-
-
 .alert{
     position: fixed;
     top: 5px;
-    width: 320px;
+    width: 350px;
     background-color: #D0A1E9;
     border-radius: 5px;
     display: flex;
@@ -79,7 +81,7 @@ body{
     height: 50px;
     border-left: 8px solid #511571;
     overflow: hidden;
-    right: -320px;
+    right: -370px;
     z-index: 9999;
 }
 .show{
@@ -104,7 +106,7 @@ body{
     }
 }
 .alert span:first-child{
-    margin-left: 10px;
+    margin-left: 40px;
     font-size: 20px;
     color: #59117F;
 }

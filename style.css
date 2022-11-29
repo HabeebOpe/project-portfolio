@@ -118,16 +118,21 @@ section{
 }
 .project-flex{
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    margin: 20px 0;
 }
 .project-wrapper{
    position: relative;
-   width: 320px;
+   width: 340px;
    height: 230px;
    background-color: gold;
    border-radius: 10px;
    overflow: hidden;
+}
+@media(min-width: 620px){
+   .project-wrapper{
+      width: 320px;
+   }
 }
 .project-wrapper a:hover{
    background-color: green;
@@ -175,7 +180,7 @@ section{
    justify-content: space-around;
 }
 .subscription form{
-   width: 310px;
+   width: 330px;
    height: auto;
    padding: 10px;
    border-radius: 10px;
